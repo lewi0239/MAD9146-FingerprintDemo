@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPeopleApp.Views.AuthPage"
+             Title="Unlock">
+  <VerticalStackLayout Padding="24" Spacing="16">
+    <Label Text="Unlock with biometrics"
+           FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" />
+    <Label x:Name="StatusLabel" Text="Checking device support..."
+           HorizontalOptions="Center" />
+    <Button x:Name="TryAgainButton" Text="Try Again"
+            IsVisible="False"
+            Clicked="OnTryAgainClicked" />
+  </VerticalStackLayout>
+</ContentPage>

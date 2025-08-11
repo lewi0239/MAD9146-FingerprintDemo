@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPeopleApp.Views.PersonDetailPage"
+             Title="Person Details">
+  <StackLayout Padding="20" Spacing="10">
+    <Image Source="{Binding Avatar}"
+           WidthRequest="120" HeightRequest="120"
+           Aspect="AspectFill"
+           HorizontalOptions="Center" />
+    <Label Text="{Binding FullName}"
+           FontAttributes="Bold"
+           FontSize="24"
+           HorizontalOptions="Center" />
+    <Label Text="{Binding Email}"
+           FontSize="16"
+           HorizontalOptions="Center" />
+  </StackLayout>
+</ContentPage>
